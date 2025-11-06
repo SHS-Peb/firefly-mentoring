@@ -1,10 +1,33 @@
 @import "tailwindcss";
 
-/* Custom global */
+/* Keep @font-face OUTSIDE @layer to prevent purge */
+@font-face {
+  font-family: "Handelson";
+  src: url("./assets/fonts/HandelsonThree.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Donau";
+  src: url("./assets/fonts/Donau-Uppercase.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 @layer base {
   body {
-    @apply bg-black text-white antialiased;
+    font-family: "Donau", sans-serif;
+    font-size: 4rem;
   }
+}
+
+h4 {
+  font-family: "handelson";
+  font-weight: lighter;
 }
 
 .firefly {
@@ -16,4 +39,3 @@
   50%  { transform: translateY(-15px) translateX(7px) scale(1.05); }
   100% { transform: translateY(0px) translateX(0px) scale(1); }
 }
-

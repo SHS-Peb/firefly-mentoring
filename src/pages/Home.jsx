@@ -8,14 +8,15 @@ export default function Home() {
       <Firefly top="20%" right="8%" color="blue" />
       <Firefly top="65%" left="12%" color="pink" />
       <Firefly bottom="10%" right="15%" color="green" />
-      {/* Add more as needed */}
 
       {/* Logo */}
-      <h2 className="text-3xl font-[cursive] text-gray-400">Firefly</h2>
-      <h1 className="text-6xl font-extralight tracking-widest">MENTORING</h1>
+      <h4 className="text-6xl font-extralight drop-shadow-[0_0_25px_#ffd7ff]">
+  Firefly
+</h4>
+      <h1 className="text-8xl font-extralight tracking-widest">MENTORING</h1>
 
       {/* Tagline */}
-      <p className="mt-6 text-xs tracking-widest">
+      <p className="font-!donau mt-6 text-3xl tracking-widest">
         FIND YOUR SPARK, AND FOLLOW THE GLOW
       </p>
     </div>
