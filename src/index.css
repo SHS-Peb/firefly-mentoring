@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Custom global */
+@layer base {
+  body {
+    @apply bg-black text-white antialiased;
+  }
+}
+
+.firefly {
+  animation: float 6s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px) translateX(0px) scale(1); }
+  50%  { transform: translateY(-15px) translateX(7px) scale(1.05); }
+  100% { transform: translateY(0px) translateX(0px) scale(1); }
+}
+
