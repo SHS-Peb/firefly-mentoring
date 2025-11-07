@@ -1,19 +1,47 @@
-export default function Firefly({ top, left, bottom, right, color }) {
-  const glow = {
-    yellow: "shadow-yellow-300",
-    blue: "shadow-blue-300",
-    pink: "shadow-pink-300",
-    green: "shadow-green-300"
+import yellow from "../assets/svg/firefly-yellow.svg";
+import blue   from "../assets/svg/firefly-blue.svg";
+import pink   from "../assets/svg/firefly-pink.svg";
+import green  from "../assets/svg/firefly-green.svg";
+
+// Maps the "color" prop to the imported SVG asset
+const MAP = {
+  yellow,
+  blue,
+  pink,
+  green,
+};
+
+export default function Firefly({
+  top,
+  left,
+  right,
+  bottom,
+  color = "yellow",
+  size = 96,       // width in pixels
+  className = "",  // optional utility classes
+}) {
+
+  const src = MAP[color] || yellow;
+
+  // Inline style supports top/left/right/bottom positioning
+  const style = {
+    position: "absolute",
+    top,
+    left,
+    right,
+    bottom,
+    width: size,
+    height: "auto",
+    pointerEvents: "none", // stops random selection/click blocking
   };
 
   return (
-    <div
-      className={`
-        absolute w-6 h-6 rounded-full bg-${color}-400
-        animate-pulse blur-[1px]
-        shadow-[0_0_50px_15px] ${glow[color]}
-      `}
-      style={{ top, left, bottom, right }}
+    <img
+      src={src}
+      alt=""
+      aria-hidden="true"
+      style={style}
+      className={`firefly noselect ${className}`}
     />
   );
 }

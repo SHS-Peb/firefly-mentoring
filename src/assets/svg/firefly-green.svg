@@ -1,0 +1,22 @@
+<svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <radialGradient id="glo-green" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ecffcf" stop-opacity="0.9"></stop>
+      <stop offset="60%" stop-color="#c6ff8f" stop-opacity="0.35"></stop>
+      <stop offset="100%" stop-color="#c6ff8f" stop-opacity="0"></stop>
+    </radialGradient>
+    <filter id="blur-20" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12"></feGaussianBlur>
+    </filter>
+  </defs>
+
+  <circle cx="48" cy="56" r="34" fill="url(#glo-green)" filter="url(#blur-20)"></circle>
+  <ellipse cx="48" cy="44" rx="7.5" ry="12" fill="#2f2f2f"></ellipse>
+  <circle cx="48" cy="33" r="4.5" fill="#2f2f2f"></circle>
+  <ellipse cx="48" cy="59" rx="7.5" ry="7" fill="#c9ffa3"></ellipse>
+  <ellipse cx="48" cy="59" rx="4.5" ry="4.2" fill="#e8ffd3"></ellipse>
+  <g fill="#ecffe0" opacity="0.9">
+    <path d="M47 37 C36 28, 30 26, 23 29 C30 32, 35 36, 42 39 Z"></path>
+    <path d="M49 37 C60 28, 66 26, 73 29 C66 32, 61 36, 54 39 Z"></path>
+  </g>
+</svg>
