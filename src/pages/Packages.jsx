@@ -49,13 +49,13 @@ export default function Packages() {
       <h1 className="font-handelson text-6xl drop-shadow-[0_0_25px_#ffd7ff] mb-10">
         Packages
       </h1>
-      <p className="font-donau text-gray-300 max-w-2xl mb-16">
+      <p className="font-donau text-lg text-gray-300 max-w-2xl mb-16">
         Whether you’re taking your first step or continuing your self-growth journey, there’s a path for you.  
         Each package is crafted to help you find your spark — and follow the glow.
       </p>
 
       {/* Package Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl w-full">
+      <div className="grid grid-cols-1 text-lg md:grid-cols-3 gap-10 max-w-6xl w-full">
         {packages.map((pkg, i) => (
           <div
             key={i}
