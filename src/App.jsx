@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Packages from "./pages/Packages";
 import Contact from "./pages/Contact";
 import CheckoutPage from "./pages/CheckoutPage";
+import Thankyou from "./pages/Thankyou";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/packages" element={<Packages />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/checkout/:tierId" element={<CheckoutPage />} />
+          <Route path="/thank-you" element={<Thankyou />} />
         </Routes>
       </div>
     </Router>
