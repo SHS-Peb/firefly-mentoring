@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -14,7 +14,6 @@ export default function App() {
       <div className="min-h-screen bg-black text-white relative overflow-hidden flex flex-col">
         <Navbar />
 
-        {/* Main page content grows to fill space */}
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
