@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Firefly from "../components/Firefly";
 
 const colors = ["yellow", "blue", "pink", "green"];
@@ -44,23 +45,16 @@ export default function Home() {
         FIND YOUR SPARK, AND FOLLOW THE GLOW
       </p>
 
-      {/* Soft emotionally supportive line */}
       <p className="font-donau max-w-xl mx-auto mt-4 text-gray-300 text-sm sm:text-base md:text-lg">
         You don’t need to have it all together. Just bring you — we’ll build from there.
       </p>
 
-      {/* Call to Action */}
-      <a
-        href="/packages"
-        className="
-          mt-10 bg-pink-500/80 hover:bg-pink-400 
-          text-white font-donau py-3 px-8 rounded-xl 
-          shadow-[0_0_20px_#ff9aff] transition-all 
-          text-base sm:text-lg
-        "
+      <Link
+        to="/packages"
+        className="mt-10 bg-pink-500/80 hover:bg-pink-400 text-white font-donau py-3 px-8 rounded-xl shadow-[0_0_20px_#ff9aff] transition-all text-base sm:text-lg"
       >
         Explore Packages
-      </a>
+      </Link>
     </div>
   );
 }
