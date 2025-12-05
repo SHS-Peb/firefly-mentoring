@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="w-full py-6 px-4 flex items-center justify-center text-white z-50 relative">
       {/* Desktop Menu (centered) */}
-      <ul className="hidden md:flex gap-10 text-xl uppercase tracking-widest">
+      <ul className="hidden md:flex gap-10 text-[1.8rem] uppercase tracking-widest">
         <li>
           <Link className="hover:text-pink-300 transition" to="/">
             Home

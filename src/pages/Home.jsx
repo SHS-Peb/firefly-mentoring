@@ -10,19 +10,25 @@ for (let i = colors.length - 1; i > 0; i--) {
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen text-center pt-10 px-4 flex flex-col items-center justify-center">
-
-      {/* LEFT FIRELIES */}
+    <div className="relative min-h-screen text-center px-4 pt-4 flex flex-col items-center justify-start">
+      {/* FRAME FIREFLIES (LEFT) */}
       <Firefly top="8%" left="6%" color={colors[0]} />
       <Firefly top="30%" left="3%" color={colors[1]} />
       <Firefly top="55%" left="9%" color={colors[2]} />
       <Firefly top="82%" left="4%" color={colors[3]} />
 
-      {/* RIGHT FIREFLIES */}
+      {/* FRAME FIREFLIES (RIGHT) */}
       <Firefly top="8%" right="6%" color={colors[0]} />
       <Firefly top="30%" right="3%" color={colors[1]} />
       <Firefly top="55%" right="9%" color={colors[2]} />
       <Firefly top="82%" right="4%" color={colors[3]} />
+
+      {/* ORGANIC CLUSTER AROUND BOTTOM MIDDLE */}
+      <Firefly top="60%" left="18%" color={colors[1]} size={82} />
+      <Firefly top="63%" right="20%" color={colors[2]} size={78} />
+      <Firefly top="68%" left="38%" color={colors[3]} size={74} />
+      <Firefly top="72%" right="32%" color={colors[0]} size={70} />
+      <Firefly top="78%" left="50%" color={colors[1]} size={68} />
 
       {/* Hero Content */}
       <h4 className="font-handelson text-5xl sm:text-6xl drop-shadow-[0_0_25px_#ffd7ff] mb-4">

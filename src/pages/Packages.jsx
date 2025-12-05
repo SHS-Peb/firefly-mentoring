@@ -73,10 +73,15 @@ export default function Packages() {
   return (
     <div className="relative min-h-screen bg-black text-white flex flex-col items-center px-6 py-20 text-center overflow-hidden">
       {/* Fireflies for ambience */}
-      <Firefly top="8%" left="6%" color="yellow" />
-      <Firefly top="22%" right="6%" color="pink" />
-      <Firefly top="58%" left="10%" color="blue" />
-      <Firefly top="78%" right="10%" color="green" />
+      <Firefly top="5%" left="6%" color="yellow" size={80} />
+      <Firefly top="20%" left="3%" color="blue" size={80} />
+      <Firefly top="45%" left="9%" color="pink" size={80} />
+      <Firefly top="70%" left="4%" color="green" size={80} />
+
+      <Firefly top="5%" right="6%" color="yellow" size={80} />
+      <Firefly top="20%" right="3%" color="blue" size={80} />
+      <Firefly top="45%" right="9%" color="pink" size={80} />
+      <Firefly top="70%" right="4%" color="green" size={80} />
 
       {/* Header */}
       <h1 className="font-handelson text-6xl drop-shadow-[0_0_25px_#ffd7ff] mb-10">

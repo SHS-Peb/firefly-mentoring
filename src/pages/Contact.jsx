@@ -17,17 +17,22 @@ export default function Contact() {
   return (
     <div className="relative min-h-screen bg-black text-white flex flex-col items-center justify-start px-6 pt-20 pb-32 text-center overflow-hidden">
       {/* Fireflies */}
-      <Firefly top="10%" left="8%" color="yellow" />
-      <Firefly top="25%" right="5%" color="blue" />
-      <Firefly top="60%" left="10%" color="pink" />
-      <Firefly top="80%" right="12%" color="green" />
+      <Firefly top="5%" left="6%" color="yellow" size={80} />
+      <Firefly top="20%" left="3%" color="blue" size={80} />
+      <Firefly top="45%" left="9%" color="pink" size={80} />
+      <Firefly top="70%" left="4%" color="green" size={80} />
+
+      <Firefly top="5%" right="6%" color="yellow" size={80} />
+      <Firefly top="20%" right="3%" color="blue" size={80} />
+      <Firefly top="45%" right="9%" color="pink" size={80} />
+      <Firefly top="70%" right="4%" color="green" size={80} />
 
       {/* Header */}
       <h1 className="font-handelson text-6xl mb-4 drop-shadow-[0_0_25px_#ffd7ff]">
         Contact Me
       </h1>
       <p className="font-donau text-gray-300 mb-10 max-w-xl text-xl">
-        Got a question or want to start your mentoring journey?  
+        Got a question or want to start your mentoring journey?
         I’d love to hear from you. Send me a message below.
       </p>
 
@@ -98,7 +103,7 @@ export default function Contact() {
               What is Firefly Mentoring?
             </h3>
             <p className="text-gray-300 mt-2 leading-relaxed font-donau">
-              Firefly Mentoring is a personal growth and goals-based mentoring space.  
+              Firefly Mentoring is a personal growth and goals-based mentoring space.
               It’s for those who want guidance, clarity, or simply someone to help them see their next step more clearly.
             </p>
           </div>
@@ -108,7 +113,7 @@ export default function Contact() {
               How are sessions run?
             </h3>
             <p className="text-gray-300 mt-2 leading-relaxed font-donau">
-              Sessions are one-on-one and can be held virtually or in person (depending on location).  
+              Sessions are one-on-one and can be held virtually or in person (depending on location).
               Each one is tailored to where you are in your journey.
             </p>
           </div>
