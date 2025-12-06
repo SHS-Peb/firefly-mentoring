@@ -1,16 +1,64 @@
-# React + Vite
+# Firefly Mentoring
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Firefly Mentoring is a goal-setting and accountability mentoring service designed to help people create structure, confidence, and momentum in their personal or professional lives.
+This repository contains the source code for the official Firefly Mentoring website.
 
-Currently, two official plugins are available:
+## About Firefly Mentoring
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Firefly Mentoring supports individuals in reaching their dreams—whether they are career-related, creative, academic, or personal.
+Past clients have worked on a wide range of goals, including:
 
-## React Compiler
+* Overcoming imposter syndrome
+* Transitioning careers
+* Reducing hoarding tendencies
+* Building study habits
+* Developing confidence and self-trust
+* Mapping out long-term personal growth plans
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The website showcases the service, available mentoring packages, and booking links.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Tech Stack
+
+This project is built using:
+
+* **React + Vite** — fast frontend development
+* **Tailwind CSS** — styling and responsive UI
+* **React Router** — page navigation
+* **PayPal React SDK** — secure payment integration
+* **GitHub Pages** — deployment
+
+---
+
+## Running the Project Locally
+
+1. Clone the repo:
+
+   ```
+   git clone https://github.com/yourusername/firefly-mentoring.git
+   ```
+
+2. Install dependencies:
+
+   ```
+   npm install
+   ```
+
+3. Start the dev server:
+
+   ```
+   npm run dev
+   ```
+
+4. Open in your browser:
+
+   ```
+   http://localhost:5173
+   ```
+
+
+## Contributing
+
+This repository is currently part of a personal project and is not open for external contributions.
+However, suggestions and feedback are welcome — feel free to open an issue!
