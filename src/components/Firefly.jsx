@@ -17,22 +17,20 @@ export default function Firefly({
   right,
   bottom,
   color = "yellow",
-  size = 96,       // width in pixels
-  className = "",  // optional utility classes
+  size = 96,       // still used for large screens if needed
+  className = "",
 }) {
 
   const src = MAP[color] || yellow;
 
-  // Inline style supports top/left/right/bottom positioning
   const style = {
     position: "absolute",
     top,
     left,
     right,
     bottom,
-    width: size,
-    height: "auto",
-    pointerEvents: "none", // stops random selection/click blocking
+    // REMOVE width here so Tailwind controls it
+    pointerEvents: "none",
   };
 
   return (
@@ -41,7 +39,15 @@ export default function Firefly({
       alt=""
       aria-hidden="true"
       style={style}
-      className={`firefly noselect ${className}`}
+      className={`
+        firefly noselect
+        w-8   /* tiny screens */
+        sm:w-12 /* small screens */
+        md:w-16 /* medium */
+        lg:w-[${size}px] /* large screens keep original size */
+        ${className}
+      `}
     />
   );
 }
+
