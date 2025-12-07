@@ -31,32 +31,6 @@ This project is built using:
 
 ---
 
-## Running the Project Locally
-
-1. Clone the repo:
-
-   ```
-   git clone https://github.com/yourusername/firefly-mentoring.git
-   ```
-
-2. Install dependencies:
-
-   ```
-   npm install
-   ```
-
-3. Start the dev server:
-
-   ```
-   npm run dev
-   ```
-
-4. Open in your browser:
-
-   ```
-   http://localhost:5173
-   ```
-
 
 ## Contributing
 
